@@ -9,6 +9,9 @@ for x in a:
   if x.isupper():
     sta= sta+1
 
+for y in a:
+  if y.islower():
+    sta= sta+1
 
 st.write('final strength',sta)
   
