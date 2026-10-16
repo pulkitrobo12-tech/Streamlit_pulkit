@@ -5,10 +5,12 @@ st=0
 if len(a)>8:
   st=st+1
 
-for x in a 
+for x in a:
   if x.isupper()
     st= st+1
 
+
+print('final strength',a)
   
 
 
