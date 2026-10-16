@@ -15,7 +15,7 @@ for y in a:
     break
 
 for x in a:
-  if x.isnumber():
+  if x.isdigit():
     sta= sta+1
     break
 
