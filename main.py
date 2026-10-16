@@ -12,6 +12,7 @@ for x in a:
 for y in a:
   if y.islower():
     sta= sta+1
+    break
 
 st.write('final strength',sta)
   
