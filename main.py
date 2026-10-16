@@ -1,5 +1,5 @@
 import streamlit as st
-a=st.number_input('enter your password')
+a=st.text_input('enter your password')
 st=0
 
 if len(a)>8:
