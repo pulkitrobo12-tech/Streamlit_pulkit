@@ -14,6 +14,12 @@ for y in a:
     sta= sta+1
     break
 
+for x in a:
+  if x in '!,@,#,$,%,^,&,*,(,),<,>,?,/,:,",;,[,],-,+,_,=,~,`':
+    sta= sta+1
+    break
+
+
 st.write('final strength',sta)
   
 
