@@ -15,6 +15,11 @@ for y in a:
     break
 
 for x in a:
+  if x.isnumber()
+    sta= sta+1
+    break
+
+for x in a:
   if x in '!,@,#,$,%,^,&,*,(,),<,>,?,/,:,",;,[,],-,+,_,=,~,`':
     sta= sta+1
     break
