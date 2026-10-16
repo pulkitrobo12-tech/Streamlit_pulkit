@@ -1,16 +1,16 @@
 import streamlit as st
 a=st.text_input('enter your password')
-st=0
+sta=0
 
 if len(a)>8:
-  st=st+1
+  sta=sta+1
 
 for x in a:
   if x.isupper():
-    st= st+1
+    sta= sta+1
 
 
-st.write('final strength',st)
+st.write('final strength',sta)
   
 
 
