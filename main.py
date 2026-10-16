@@ -28,7 +28,7 @@ for x in a:
 st.write('final strength',sta)
 
 if sta==5:
-  sta="Congratulations"
+  st.write("Congratulations")
   
 
 
