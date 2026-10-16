@@ -6,7 +6,7 @@ if len(a)>8:
   st=st+1
 
 for x in a:
-  if x.isupper()
+  if x.isupper():
     st= st+1
 
 
