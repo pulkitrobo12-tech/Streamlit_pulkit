@@ -10,7 +10,7 @@ for x in a:
     st= st+1
 
 
-print('final strength',a)
+st.write('final strength',st)
   
 
 
