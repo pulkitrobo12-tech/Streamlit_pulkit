@@ -18,6 +18,8 @@ for j in a:
   if j.isdigit():
     sta= sta+1
     break
+  else:
+    break
 
 for k in a:
   if k in '!,@,#,$,%,^,&,*,(,),<,>,?,/,:,",;,[,],-,+,_,=,~,`':
