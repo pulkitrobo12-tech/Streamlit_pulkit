@@ -27,10 +27,19 @@ for k in a:
     break
   
 
-st.write('final strength',sta)
 
-if sta==5:
-  st.write("Congratulations")
+if st.button('check strength'):
+
+
+  st.write('final strength',sta)
+
+  if sta==5:
+    st.write("Congratulations, your password is strong")
+  elif sta>=3 and sta <5:
+    st.write("Your password is not weak but it can be made stronger")
+  else:
+    st.write('Your Password needs improvement')
+  
   
 
 
