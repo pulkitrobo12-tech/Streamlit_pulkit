@@ -14,13 +14,13 @@ for y in a:
     sta= sta+1
     break
 
-for x in a:
-  if x.isdigit():
+for j in a:
+  if j.isdigit():
     sta= sta+1
     break
 
-for x in a:
-  if x in '!,@,#,$,%,^,&,*,(,),<,>,?,/,:,",;,[,],-,+,_,=,~,`':
+for k in a:
+  if k in '!,@,#,$,%,^,&,*,(,),<,>,?,/,:,",;,[,],-,+,_,=,~,`':
     sta= sta+1
     break
 
