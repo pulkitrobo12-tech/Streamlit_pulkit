@@ -8,6 +8,7 @@ if len(a)>8:
 for x in a:
   if x.isupper():
     sta= sta+1
+    break
 
 for y in a:
   if y.islower():
@@ -18,14 +19,13 @@ for j in a:
   if j.isdigit():
     sta= sta+1
     break
-  else:
-    break
+  
 
 for k in a:
   if k in '!,@,#,$,%,^,&,*,(,),<,>,?,/,:,",;,[,],-,+,_,=,~,`':
     sta= sta+1
     break
-
+  
 
 st.write('final strength',sta)
 
