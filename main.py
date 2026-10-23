@@ -34,11 +34,11 @@ for y in a:
 for j in a:
   if j.isdigit():
     sta= sta+1
-    digit=-1
+    digit=1
     break
 
 for k in a:
-  if k in '!,@,#,$,%,^,&,*,(,),<,>,?,/,:,",;,[,],-,+,_,=,~,`':
+  if k in '!,@,#,$,%,^,&,*,(,),<,>,?,/,:,;,[,],-,+,_,=,~,`':
     sta= sta+1
     specialcharacters=1
     break
@@ -67,7 +67,7 @@ if st.button('check strength'):
   else:
     st.error('Your Password is weak')
     if uppercase==0:
-      st.write('You need atleast 1 lowercase letter to make it stronger')
+      st.write('You need atleast 1 uppercase letter to make it stronger')
     if lowercase==0:
       st.write('You need atleast 1 lowercase letter to make it stronger')
     if digit==0:
