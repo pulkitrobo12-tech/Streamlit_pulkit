@@ -11,10 +11,12 @@ lowercase=0
 uppercase=0
 digit=0
 specialcharacters=0
+length=0
 
 
-if len(a)>8:
+if len(a)>=8:
   sta=sta+1
+  length=1
 
 for x in a:
   if x.isupper():
@@ -60,6 +62,8 @@ if st.button('check strength'):
       st.write('You need atleast 1 digit to make it stronger')
     if specialcharacters==0:
        st.write('You need atleast 1 special character to make it stronger')
+    if length==0:
+       st.write('You need atleast 8 letters in your password')
   else:
     st.error('Your Password is weak')
     if uppercase==0:
@@ -70,6 +74,8 @@ if st.button('check strength'):
       st.write('You need atleast 1 digit to make it stronger')
     if specialcharacters==0:
        st.write('You need atleast 1 special character to make it stronger')
+    if length==0:
+       st.write('You need atleast 8 letters in your password')
 
   st.write('   ') 
   st.write('Your Progress Bar')  
