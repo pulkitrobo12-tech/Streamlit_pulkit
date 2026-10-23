@@ -48,7 +48,7 @@ for k in a:
 if st.button('check strength'):
   
   
-  st.subheader('📊 Password Strength Meter')
+  st.subheader('Password Strength Meter')
   st.progress(sta / 5)
   st.write('Strength:', sta, '/5')
   st.write('Progress:', int(sta / 5 * 100), '%')
@@ -80,8 +80,7 @@ if st.button('check strength'):
     if length==0:
        st.write('You need atleast 8 letters in your password')
 
-  st.write('   ') 
-  st.write('Your Progress Bar')  
-  st.progress(sta / 5)
+  
+ 
 
 
