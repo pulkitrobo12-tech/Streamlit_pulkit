@@ -1,8 +1,10 @@
 import streamlit as st
+
+st.title('PASSWORD STRENGTH CHECKER')
 a=st.text_input('enter your password')
 sta=0
 
-st.title('PASSWORD STRENGTH CHECKER')
+
 if len(a)>8:
   sta=sta+1
 
