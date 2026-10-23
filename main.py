@@ -48,10 +48,10 @@ if st.button('check strength'):
   
   st.write('final strength',sta)
 
-  if sta==4:
-    st.write("Congratulations, your password is strong")
-  elif sta==3:
-    st.write("Your password is moderate but it can be made stronger")
+  if sta==5:
+    st.success("Congratulations, your password is strong")
+  elif sta==3 or sta==4: 
+    st.warning("Your password is moderate but it can be made stronger")
     if uppercase==0:
       st.write('You need atleast 1 uppercase letter to make it stronger')
     if lowercase==0:
@@ -61,7 +61,7 @@ if st.button('check strength'):
     if specialcharacters==0:
        st.write('You need atleast 1 special character to make it stronger')
   else:
-    st.write('Your Password is weak')
+    st.error('Your Password is weak')
     if uppercase==0:
       st.write('You need atleast 1 lowercase letter to make it stronger')
     if lowercase==0:
@@ -73,6 +73,6 @@ if st.button('check strength'):
 
   st.write('   ') 
   st.write('Your Progress Bar')  
-  st.progress(sta / 4)
+  st.progress(sta / 5)
 
 
