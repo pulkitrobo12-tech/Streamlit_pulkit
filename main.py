@@ -22,14 +22,14 @@ for x in a:
 for y in a:
   if y.islower():
     sta= sta+1
-    lowercase=0
+    lowercase=1
     break
     
 
 for j in a:
   if j.isdigit():
     sta= sta+1
-    digit=0
+    digit=1
     break
 
 for k in a:
