@@ -4,10 +4,10 @@ st.title('PASSWORD STRENGTH CHECKER')
 st.write('By Pulkit Nagar 9-F')
 a=st.text_input('enter your password')
 sta=0
-lowercase=1
-uppercase=1
-digit=1
-specialcharacters=1
+lowercase=0
+uppercase=0
+digit=0
+specialcharacters=0
 
 
 if len(a)>8:
@@ -16,26 +16,26 @@ if len(a)>8:
 for x in a:
   if x.isupper():
     sta= sta+1
-    uppercase=0
+    uppercase=1
     break
 
 for y in a:
   if y.islower():
     sta= sta+1
-    lowercase=0
+    lowercase=1
     break
     
 
 for j in a:
   if j.isdigit():
     sta= sta+1
-    digit=-0
+    digit=-1
     break
 
 for k in a:
   if k in '!,@,#,$,%,^,&,*,(,),<,>,?,/,:,",;,[,],-,+,_,=,~,`':
     sta= sta+1
-    specialcharacters=0
+    specialcharacters=1
     break
   
 
@@ -50,7 +50,7 @@ if st.button('check strength'):
   elif sta>=3 and sta <5:
     st.write("Your password is moderate but it can be made stronger")
     if uppercase==0:
-      st.write('You need atleast 1 lowercase letter to make it stronger')
+      st.write('You need atleast 1 uppercase letter to make it stronger')
     if lowercase==0:
       st.write('You need atleast 1 lowercase letter to make it stronger')
     if digit==0:
