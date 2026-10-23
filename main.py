@@ -67,7 +67,8 @@ if st.button('check strength'):
       st.write('You need atleast 1 digit to make it stronger')
     if specialcharacters==0:
        st.write('You need atleast 1 special character to make it stronger')
-  
+
+st.progress(sta / 4)
   
 
 
