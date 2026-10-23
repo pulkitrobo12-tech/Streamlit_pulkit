@@ -53,7 +53,7 @@ if st.button('check strength'):
   if sta==5:
     st.success("Congratulations, your password is strong")
   elif sta==3 or sta==4: 
-    st.warning("Your password is moderate but it can be made stronger")
+    st.warning("Your password is moderate and can be made stronger")
     if uppercase==0:
       st.write('You need atleast 1 uppercase letter to make it stronger')
     if lowercase==0:
