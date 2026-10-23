@@ -38,7 +38,7 @@ for j in a:
     break
 
 for k in a:
-  if k in '!,@,#,$,%,^,&,*,(,),<,>,?,/,:,;,[,],-,+,_,=,~,`':
+  if k in '!@#$%^&*()<>?/:;[]-+_=~`':
     sta= sta+1
     specialcharacters=1
     break
@@ -48,7 +48,10 @@ for k in a:
 if st.button('check strength'):
   
   
-  st.write('final strength',sta)
+  st.subheader('📊 Password Strength Meter')
+  st.progress(sta / 5)
+  st.write('Strength:', sta, '/5')
+  st.write('Progress:', int(sta / 5 * 100), '%')
 
   if sta==5:
     st.success("Congratulations, your password is strong")
