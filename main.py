@@ -47,10 +47,10 @@ for k in a:
 
 if st.button('check strength'):
   
-  if st.button('check strength'):
-    if a=='':
+  
+  if a=='':
         st.warning('Please enter a password first')
-    else:
+  else:
         st.subheader('Password Strength Meter')
   st.progress(sta / 5)
   st.write('Strength:', sta, '/5')
