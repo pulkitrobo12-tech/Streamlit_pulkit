@@ -59,7 +59,7 @@ if st.button('check strength'):
        st.write('You need atleast 1 special character to make it stronger')
   else:
     st.write('Your Password is weak')
-     if uppercase==0:
+    if uppercase==0:
       st.write('You need atleast 1 lowercase letter to make it stronger')
     if lowercase==0:
       st.write('You need atleast 1 lowercase letter to make it stronger')
