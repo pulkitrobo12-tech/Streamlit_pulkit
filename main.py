@@ -1,6 +1,7 @@
 import streamlit as st
 
 st.title('PASSWORD STRENGTH CHECKER')
+st.write('By Pulkit Nagar 9-F')
 a=st.text_input('enter your password')
 sta=0
 
