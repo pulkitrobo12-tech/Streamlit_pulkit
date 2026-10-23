@@ -44,7 +44,6 @@ for k in a:
     break
   
 
-
 if st.button('check strength'):
   
   
@@ -52,29 +51,29 @@ if st.button('check strength'):
         st.warning('Please enter a password first')
   else:
         st.subheader('Password Strength Meter')
-  st.progress(sta / 5)
-  st.write('Strength:', sta, '/5')
-  st.write('Progress:', int(sta / 5 * 100), '%')
+        st.progress(sta / 5)
+        st.write('Strength:', sta, '/5')
+        st.write('Progress:', int(sta / 5 * 100), '%')
 
-  if sta==5:
-    st.success("Congratulations, your password is strong")
-  elif sta >= 3: 
-    st.warning("Your password is moderate and can be made stronger")
-  else:
-    st.error('Your Password is weak')
+        if sta==5:
+          st.success("Congratulations, your password is strong")
+        elif sta >= 3: 
+          st.warning("Your password is moderate and can be made stronger")
+        else:
+          st.error('Your Password is weak')
 
 
-  st.subheader('Suggestions')
-  if uppercase==0:
-      st.write('You need atleast 1 uppercase letter to make it stronger')
-  if lowercase==0:
-      st.write('You need atleast 1 lowercase letter to make it stronger')
-  if digit==0:
-      st.write('You need atleast 1 digit to make it stronger')
-  if specialcharacters==0:
-       st.write('You need atleast 1 special character to make it stronger')
-  if length==0:
-       st.write('You need atleast 8 letters in your password')
+        st.subheader('Suggestions')
+        if uppercase==0:
+            st.write('You need atleast 1 uppercase letter to make it stronger')
+        if lowercase==0:
+            st.write('You need atleast 1 lowercase letter to make it stronger')
+        if digit==0:
+            st.write('You need atleast 1 digit to make it stronger')
+        if specialcharacters==0:
+            st.write('You need atleast 1 special character to make it stronger')
+        if length==0:
+             st.write('You need atleast 8 letters in your password')
 
   
  
