@@ -57,27 +57,20 @@ if st.button('check strength'):
     st.success("Congratulations, your password is strong")
   elif sta==3 or sta==4: 
     st.warning("Your password is moderate and can be made stronger")
-    if uppercase==0:
-      st.write('You need atleast 1 uppercase letter to make it stronger')
-    if lowercase==0:
-      st.write('You need atleast 1 lowercase letter to make it stronger')
-    if digit==0:
-      st.write('You need atleast 1 digit to make it stronger')
-    if specialcharacters==0:
-       st.write('You need atleast 1 special character to make it stronger')
-    if length==0:
-       st.write('You need atleast 8 letters in your password')
   else:
     st.error('Your Password is weak')
-    if uppercase==0:
+
+
+  st.subheader('Suggestions')
+  if uppercase==0:
       st.write('You need atleast 1 uppercase letter to make it stronger')
-    if lowercase==0:
+  if lowercase==0:
       st.write('You need atleast 1 lowercase letter to make it stronger')
-    if digit==0:
+  if digit==0:
       st.write('You need atleast 1 digit to make it stronger')
-    if specialcharacters==0:
+  if specialcharacters==0:
        st.write('You need atleast 1 special character to make it stronger')
-    if length==0:
+  if length==0:
        st.write('You need atleast 8 letters in your password')
 
   
