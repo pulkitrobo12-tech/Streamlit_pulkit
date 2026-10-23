@@ -73,7 +73,7 @@ if st.button('check strength'):
         if specialcharacters==0:
             st.write('You need atleast 1 special character to make it stronger')
         if length==0:
-             st.write('You need atleast 8 letters in your password')
+             st.write('You need atleast 8 characters in your password')
 
   
  
