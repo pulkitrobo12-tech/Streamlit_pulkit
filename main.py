@@ -47,15 +47,18 @@ for k in a:
 
 if st.button('check strength'):
   
-  
-  st.subheader('Password Strength Meter')
+  if st.button('check strength'):
+    if a=='':
+        st.warning('Please enter a password first')
+    else:
+        st.subheader('Password Strength Meter')
   st.progress(sta / 5)
   st.write('Strength:', sta, '/5')
   st.write('Progress:', int(sta / 5 * 100), '%')
 
   if sta==5:
     st.success("Congratulations, your password is strong")
-  elif sta==3 or sta==4: 
+  elif sta >= 3: 
     st.warning("Your password is moderate and can be made stronger")
   else:
     st.error('Your Password is weak')
