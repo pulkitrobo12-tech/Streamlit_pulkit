@@ -22,20 +22,20 @@ for x in a:
 for y in a:
   if y.islower():
     sta= sta+1
-    lowercase=1
+    lowercase=0
     break
     
 
 for j in a:
   if j.isdigit():
     sta= sta+1
-    digit=1
+    digit=-0
     break
 
 for k in a:
   if k in '!,@,#,$,%,^,&,*,(,),<,>,?,/,:,",;,[,],-,+,_,=,~,`':
     sta= sta+1
-    specialcharacters=1
+    specialcharacters=0
     break
   
 
@@ -51,21 +51,21 @@ if st.button('check strength'):
     st.write("Your password is moderate but it can be made stronger")
     if uppercase==0:
       st.write('You need atleast 1 lowercase letter to make it stronger')
-    elif lowercase==0:
+    if lowercase==0:
       st.write('You need atleast 1 lowercase letter to make it stronger')
-    elif digit==0:
+    if digit==0:
       st.write('You need atleast 1 digit to make it stronger')
-    else:
+    if specialcharacters==0
        st.write('You need atleast 1 special character to make it stronger')
   else:
     st.write('Your Password is weak')
-    if uppercase==0:
+     if uppercase==0:
       st.write('You need atleast 1 lowercase letter to make it stronger')
-    elif lowercase==0:
+    if lowercase==0:
       st.write('You need atleast 1 lowercase letter to make it stronger')
-    elif digit==0:
+    if digit==0:
       st.write('You need atleast 1 digit to make it stronger')
-    else:
+    if specialcharacters==0
        st.write('You need atleast 1 special character to make it stronger')
   
   
