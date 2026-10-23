@@ -67,7 +67,7 @@ if st.button('check strength'):
       st.write('You need atleast 1 lowercase letter to make it stronger')
     elif lowercase==1:
       st.write('You need atleast 1 lowercase letter to make it stronger')
-    elif: digit==1
+    elif digit==1:
       st.wrtite('You need atleast 1 digit to make it stronger')
     else:
        st.wrtite('You need atleast 1 special character to make it stronger')
