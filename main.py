@@ -1,3 +1,6 @@
+#Pulkit Nagar 9-F
+#Agenda- Password strength checker using streamlit
+
 import streamlit as st
 
 st.title('PASSWORD STRENGTH CHECKER')
@@ -68,8 +71,8 @@ if st.button('check strength'):
     if specialcharacters==0:
        st.write('You need atleast 1 special character to make it stronger')
 
-
-  st.write('your progress bar')  
+  st.write('   ') 
+  st.write('Your Progress Bar')  
   st.progress(sta / 4)
 
 
