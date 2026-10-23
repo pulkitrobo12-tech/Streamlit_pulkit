@@ -42,7 +42,7 @@ for k in a:
 
 if st.button('check strength'):
 
-
+  st.progress(sta / 4)
   st.write('final strength',sta)
 
   if sta==4:
@@ -68,7 +68,7 @@ if st.button('check strength'):
     if specialcharacters==0:
        st.write('You need atleast 1 special character to make it stronger')
 
-st.progress(sta / 4)
+
   
 
 
